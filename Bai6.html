@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Login</title>
+    <link rel="stylesheet" href="Bai6.css" />
+  </head>
+  <body>
+    <h1>Novell Serviecs Login</h1>
+    <form action="">
+      <table>
+        <tr>
+          <td><label for="lbl_username">Username:</label></td>
+          <td><input type="text" name="username" id="lbl_username" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="lbl_password">Password:</label></td>
+          <td><input type="password" name="password" id="lbl_password" /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="lbl_cityofemployment"
+              >City of <br />
+              Employment:</label
+            >
+          </td>
+          <td>
+            <input
+              type="text"
+              name="cityofemployment"
+              id="lbl_cityofemployment"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="lbl_webserver">Web server:</label></td>
+          <td>
+            <select name="webserver" id="lbl_webserver">
+              <option value="0">-Choose a server-</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>
+              Please specify <br />
+              your role:</label
+            >
+          </td>
+          <td>
+            <label><input type="radio" name="role" value="admin" />Admin</label>
+            <br />
+            <label
+              ><input
+                type="radio"
+                name="role"
+                value="engineer"
+              />Engineer</label
+            >
+            <br />
+            <label
+              ><input type="radio" name="role" value="manager" />Manager</label
+            >
+            <br />
+            <label><input type="radio" name="role" value="guest" />Guest</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>
+              Single Sign-on <br />
+              to the following:</label
+            >
+          </td>
+          <td>
+            <label
+              ><input type="checkbox" name="singon" value="mail" />Mail</label
+            >
+            <br />
+            <label
+              ><input
+                type="checkbox"
+                name="signon"
+                value="payroll"
+              />Payroll</label
+            >
+            <br />
+            <label>
+              <input
+                type="checkbox"
+                name="signon"
+                value="Self-service"
+              />Self-service
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+          </th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

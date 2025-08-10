@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đặt hàng sản phẩm</title>
+    <link rel="stylesheet" href="Bai2.css" />
+  </head>
+  <body>
+    <h1>Form đặt hàng sản phẩm</h1>
+    <form action="">
+      <fieldset>
+        <legend>Thông tin đơn hàng</legend>
+
+        <div>
+          <label for="lbl_itemsname">Tên sản phẩm:</label>
+          <select name="itemsname" id="lbl_itemsname">
+            <option value="0" selected>iPhone 15</option>
+            <option value="1">iPhone 14</option>
+            <option value="2">iPhone 13</option>
+            <option value="3">iPhone 12</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="lbl_quantity">Số lượng:</label>
+          <input
+            type="quantity"
+            id="lbl_quantity"
+            name="quantity"
+            class="quantity"
+          />
+        </div>
+
+        <div>
+          <label for="lbl_paidpicture">Upload ảnh thanh toán:</label>
+          <input type="file" id="lbl_paidpicture" />
+        </div>
+      </fieldset>
+      <button type="submit">Đặt hàng</button>
+    </form>
+  </body>
+</html>

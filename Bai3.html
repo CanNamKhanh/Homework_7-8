@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form khảo sát ý kiến</title>
+    <link rel="stylesheet" href="Bai3.css" />
+  </head>
+  <body>
+    <h1>Form khảo sát ý kiến</h1>
+    <form action="">
+      <div>
+        <label for="lbl_fullname">Họ tên:</label>
+        <input type="text" name="fullname" id="lbl_fullname" />
+      </div>
+
+      <div>
+        <label for="lbl_satisfiedlevel">Mức độ hài lòng:</label>
+        <input type="range" name="satisfiedlevel" id="lbl_satisfiedlevel" />
+      </div>
+
+      <div>
+        <label for="lbl_contacttime">Thời gian liên hệ:</label>
+        <input
+          type="time"
+          name="contacttime"
+          id="lbl_contacttime"
+          class="contacttime"
+        />
+      </div>
+
+      <div>
+        <label>Kênh thông tin:</label>
+        <label
+          ><input
+            type="checkbox"
+            name="information_source"
+            value="facebook"
+          />Facebook</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="information_source"
+            value="youtube"
+          />Youtube</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="information_source"
+            value="website"
+          />Website</label
+        >
+      </div>
+
+      <div>
+        <label for="lbl_comments" class="comments">Góp ý khác:</label>
+        <textarea
+          name="comments"
+          id="lbl_comments"
+          class="commentsbox"
+        ></textarea>
+      </div>
+      <button type="submit">Gửi</button>
+    </form>
+  </body>
+</html>

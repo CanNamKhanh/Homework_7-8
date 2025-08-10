@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form liên hệ nhiều bước</title>
+    <link rel="stylesheet" href="Bai5.css" />
+  </head>
+  <body>
+    <h1>Form liên hệ nhiều bước</h1>
+    <form action="">
+      <fieldset class="personalfield">
+        <legend>Thông tin cá nhân</legend>
+        <div>
+          <label for="lbl_fullname">Họ tên:</label>
+          <input type="text" name="fullname" id="lbl_fullname" />
+        </div>
+
+        <div>
+          <label for="lbl_email">Email:</label>
+          <input type="email" name="email" id="lbl_email" />
+        </div>
+
+        <div>
+          <label for="lbl_phonenumber">Số điện thoại</label>
+          <input type="number" name="phonenumber" id="lbl_phonenumber" />
+        </div>
+      </fieldset>
+
+      <fieldset class="requestfield">
+        <legend>Thông tin yêu cầu</legend>
+        <div>
+          <label for="lbl_requesttype">Loại yêu cầu:</label>
+          <select name="requesttype" id="lbl_requesttype">
+            <option value="technique" selected>Hỗ trợ kỹ thuật</option>
+            <option value="medical">Hỗ trợ y tế</option>
+            <option value="education">Hỗ trợ giáo dục</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="lbl_description" class="description">Mô tả:</label>
+          <textarea name="description" id="lbl_description"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="extrafield">
+        <legend>Thông tin bổ sung</legend>
+        <div>
+          <label>
+            <label
+              ><input
+                type="checkbox"
+                name="promotionemail"
+                value="promotionemail"
+              />Nhận email khuyến mãi</label
+            >
+          </label>
+        </div>
+
+        <div>
+          <label> Cách liện hệ:</label>
+          <label>
+            <input type="radio" name="contact" value="email" />Email
+          </label>
+          <label>
+            <input type="radio" name="contact" value="phone" />Điện thoại
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit">Gửi thông tin</button>
+    </form>
+  </body>
+</html>

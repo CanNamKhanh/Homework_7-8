@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="Bai7.css" />
+  </head>
+  <body>
+    <form action="">
+      <table border="1" cellpadding="5" style="width: 465px">
+        <colgroup>
+          <col class="col1" />
+          <col class="col2" />
+        </colgroup>
+        <tr>
+          <th colspan="2">ĐĂNG KÝ</th>
+        </tr>
+
+        <tr>
+          <td><label for="lbl_fullname">Full name</label></td>
+          <td>
+            <input
+              type="text"
+              placeholder="Nhập fullname"
+              name="fullname"
+              style="width: 237px"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="lbl_username">Username</label></td>
+          <td>
+            <input
+              type="text"
+              placeholder="Nhập tên"
+              name="username"
+              style="width: 237px"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="lbl_password">Password</label></td>
+          <td>
+            <input
+              type="password"
+              placeholder="Nhập mật khẩu"
+              name="password"
+              style="width: 237px"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="lbl_repassword">Nhập lại <br />Password</label>
+          </td>
+          <td>
+            <input
+              type="password"
+              placeholder="Nhập lại mật khẩu"
+              name="repassword"
+              style="width: 237px"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Giới tính</label></td>
+          <td>
+            <label><input type="radio" value="male" />Nam</label>
+            <label><input type="radio" value="female" name="gender" />Nữ</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="lbl_birthday">Ngày sinh</label></td>
+          <td>
+            <div>
+              <!-- select>option[value=day$]{Ngày $}*31 -->
+              <select name="day" id="lbl_day">
+                <option value="day1" selected>Ngày 1</option>
+                <option value="day2">Ngày 2</option>
+                <option value="day3">Ngày 3</option>
+                <option value="day4">Ngày 4</option>
+                <option value="day5">Ngày 5</option>
+                <option value="day6">Ngày 6</option>
+                <option value="day7">Ngày 7</option>
+                <option value="day8">Ngày 8</option>
+                <option value="day9">Ngày 9</option>
+                <option value="day10">Ngày 10</option>
+                <option value="day11">Ngày 11</option>
+                <option value="day12">Ngày 12</option>
+                <option value="day13">Ngày 13</option>
+                <option value="day14">Ngày 14</option>
+                <option value="day15">Ngày 15</option>
+                <option value="day16">Ngày 16</option>
+                <option value="day17">Ngày 17</option>
+                <option value="day18">Ngày 18</option>
+                <option value="day19">Ngày 19</option>
+                <option value="day20">Ngày 20</option>
+                <option value="day21">Ngày 21</option>
+                <option value="day22">Ngày 22</option>
+                <option value="day23">Ngày 23</option>
+                <option value="day24">Ngày 24</option>
+                <option value="day25">Ngày 25</option>
+                <option value="day26">Ngày 26</option>
+                <option value="day27">Ngày 27</option>
+                <option value="day28">Ngày 28</option>
+                <option value="day29">Ngày 29</option>
+                <option value="day30">Ngày 30</option>
+                <option value="day31">Ngày 31</option>
+              </select>
+              <!-- select>option[value=month$]{Tháng $}*12 -->
+              <select name="month" id="lbl_month">
+                <option value="month1" selected>Tháng 1</option>
+                <option value="month2">Tháng 2</option>
+                <option value="month3">Tháng 3</option>
+                <option value="month4">Tháng 4</option>
+                <option value="month5">Tháng 5</option>
+                <option value="month6">Tháng 6</option>
+                <option value="month7">Tháng 7</option>
+                <option value="month8">Tháng 8</option>
+                <option value="month9">Tháng 9</option>
+                <option value="month10">Tháng 10</option>
+                <option value="month11">Tháng 11</option>
+                <option value="month12">Tháng 12</option>
+              </select>
+              <!-- select>option[value=year$@2015]{Năm $@2015}*12 -->
+              <select name="year" id="lbl_year">
+                <option value="year2015" selected>Năm 2015</option>
+                <option value="year2016">Năm 2016</option>
+                <option value="year2017">Năm 2017</option>
+                <option value="year2018">Năm 2018</option>
+                <option value="year2019">Năm 2019</option>
+                <option value="year2020">Năm 2020</option>
+                <option value="year2021">Năm 2021</option>
+                <option value="year2022">Năm 2022</option>
+                <option value="year2023">Năm 2023</option>
+                <option value="year2024">Năm 2024</option>
+                <option value="year2025">Năm 2025</option>
+                <option value="year2026">Năm 2026</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="lbl_address">Địa chỉ</label></td>
+          <td><textarea name="address" id="lbl_address"></textarea></td>
+        </tr>
+
+        <tr>
+          <td><label for="lbl_avatar">Avatar</label></td>
+          <td><input type="file" name="avatar" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="lbl_hobby">Sở thích</label></td>
+          <td>
+            <label
+              ><input type="checkbox" name="hobby" value="film" />Xem
+              Phim</label
+            >
+            <label
+              ><input type="checkbox" name="hobby" value="sport" />Thể
+              Thao</label
+            >
+            <label
+              ><input type="checkbox" name="hobby" value="web" />Web
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <button type="reset">Reset</button>
+            &nbsp;<!-- &nbsp; khoảng trắng-->
+            <button type="submit">OK</button>
+          </th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
